@@ -15,7 +15,7 @@ describe('angular.io test', () => {
 
     it('should clear a value in the search box', () => {
         pageObj.searchInput.clear().then(() => {
-            pageObj.searchInput.click();            //в противном случае, не прячется блок результатов.
+            pageObj.searchInput.click();           
         })
         expect(pageObj.searchInput.getAttribute('value')).toEqual('');
         expect(pageObj.searchResults.isPresent()).toBe(false);
